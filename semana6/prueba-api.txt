@@ -1,0 +1,22 @@
+Prueba de la ruta POST /registro
+
+JSON enviado:
+
+{
+  "nombre": "Maria",
+  "mensaje": "Hola comunidad"
+}
+
+Respuesta del servidor:
+
+{
+  "estado": "Datos recibidos",
+  "nombre": "Maria",
+  "mensaje": "Hola comunidad"
+}
+
+Explicación:
+
+El servidor recibe los datos enviados en el cuerpo de la petición mediante req.body.
+Luego extrae los campos nombre y mensaje y devuelve una respuesta JSON.
+La respuesta confirma que los datos fueron recibidos correctamente mostrando el estado y los valores enviados.
